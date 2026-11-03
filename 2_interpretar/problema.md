@@ -12,7 +12,7 @@ PulsoFarma es un delivery de farmacia en Lima. Entre agosto y octubre de 2026 el
 - **Qué significa "mejorar" aquí** (qué número y cuánto):
 
 ## 2. Leer el diccionario
-En **Catalog** → `workspace.taller_pulsofarma`, lee la descripción de cada tabla y columna. Las 4 que están vacías las completa tu equipo en `1_setup/02_aplicar_diccionario.sql`. Si una columna no se entiende, se corrige el diccionario, no el gráfico.
+En **Catalog** → `workspace.taller_pulsofarma`, lee la descripción de cada tabla y columna antes de calcular nada. Si una columna no se entiende, se corrige el diccionario, no el gráfico.
 
 ## 3. Elegir los números que prueban el mensaje
 | Número | Para qué está (qué parte del mensaje prueba) | Definición |

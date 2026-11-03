@@ -1,10 +1,6 @@
 -- PulsoFarma · Paso 2 de 3: aplicar el diccionario
 -- Lo gobierna el diccionario: el significado de cada tabla y columna.
 -- Este archivo es la ÚNICA fuente de las descripciones (ver diccionario_datos.md).
---
--- TAREA DEL EQUIPO: hay 4 descripciones vacías, marcadas con TODO.
--- Explora los datos, decide qué significa cada columna y escríbelo.
--- Hasta que no las completes, 03_validar_diccionario.sql mostrará 4 pendientes.
 
 -- Esquema y volumen
 COMMENT ON SCHEMA workspace.taller_pulsofarma IS
@@ -24,11 +20,11 @@ ALTER TABLE workspace.taller_pulsofarma.pedidos ALTER COLUMN distrito
 ALTER TABLE workspace.taller_pulsofarma.pedidos ALTER COLUMN monto_productos
   COMMENT 'Valor de los productos en soles, sin el costo de envío';
 ALTER TABLE workspace.taller_pulsofarma.pedidos ALTER COLUMN costo_envio
-  COMMENT '';  -- TODO (pista: supuestos_negocio)
+  COMMENT 'Lo que paga el cliente por el envío, en soles. S/5.90 hasta el 14-set-2026 y S/8.90 desde el 15-set-2026';
 ALTER TABLE workspace.taller_pulsofarma.pedidos ALTER COLUMN minutos_prometidos
-  COMMENT '';  -- TODO (pista: supuestos_negocio)
+  COMMENT 'Tiempo de entrega que la app le promete al cliente, en minutos. Es el mismo para todos los distritos y horas';
 ALTER TABLE workspace.taller_pulsofarma.pedidos ALTER COLUMN estado_final
-  COMMENT '';  -- TODO (pista: pedido_estados)
+  COMMENT 'entregado o cancelado. Un cancelado no tiene hora de entrega, pero sí hora de cancelación en pedido_estados';
 
 -- Tabla pedido_estados
 COMMENT ON TABLE workspace.taller_pulsofarma.pedido_estados IS
@@ -38,7 +34,7 @@ ALTER TABLE workspace.taller_pulsofarma.pedido_estados ALTER COLUMN pedido_id
 ALTER TABLE workspace.taller_pulsofarma.pedido_estados ALTER COLUMN estado
   COMMENT 'creado: el cliente pide · confirmado: la farmacia acepta · preparado: listo para salir · despachado: sale con el motorizado · entregado · cancelado';
 ALTER TABLE workspace.taller_pulsofarma.pedido_estados ALTER COLUMN fecha_hora
-  COMMENT '';  -- TODO (pista: supuestos_negocio)
+  COMMENT 'Momento del cambio de estado, en UTC. Lima = UTC-5: restar 5 horas para la hora local';
 
 -- Tabla encuestas_nps
 COMMENT ON TABLE workspace.taller_pulsofarma.encuestas_nps IS

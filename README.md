@@ -50,7 +50,7 @@ Llega a clase con todos los pasos listos y el validador en 0 pendientes.
    ```
 2. **Subir los CSV**: **Catalog** → **My organization** → `workspace` → `taller_pulsofarma` → **Volumes** → `raw` → **Upload to this volume**. Sube los 4 archivos de `1_setup/data/`.
 3. **Tablas**: corre el resto de `1_setup/01_crear_tablas.sql`. Debe dar **16030** pedidos, **79807** estados, **4633** encuestas y **11** supuestos.
-4. **Diccionario**: completa los 4 `TODO` de `1_setup/02_aplicar_diccionario.sql` y córrelo. Cómo se mantiene: `1_setup/diccionario_datos.md`.
+4. **Diccionario**: corre `1_setup/02_aplicar_diccionario.sql`. Pone la descripción de cada tabla y columna en Unity Catalog, que es lo que la IA va a leer. Cómo se mantiene: `1_setup/diccionario_datos.md`.
 5. **Validar**: corre `1_setup/03_validar_diccionario.sql`. Debe dar **23 objetos y 0 pendientes**.
 6. **Herramienta**: Genie (`1_setup/04_genie.md`) o Claude (`1_setup/05_claude_conector.md`, sin token).
 

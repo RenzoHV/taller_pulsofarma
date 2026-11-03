@@ -26,4 +26,3 @@ WHERE c.table_schema = 'taller_pulsofarma'
 ORDER BY c.table_name, c.ordinal_position;
 
 -- Resultado esperado: 23 objetos revisados (4 tablas + 19 columnas) y 0 pendientes.
--- Si recién empiezas, verás 4 pendientes: son los TODO de 02_aplicar_diccionario.sql.
