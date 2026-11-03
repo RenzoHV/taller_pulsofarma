@@ -1,0 +1,12 @@
+concepto,valor,unidad,nota
+promesa_entrega_min,30,minutos,"Lo que la app promete a todos los clientes, en cualquier distrito y hora"
+costo_envio_hasta_14set,5.9,soles,Tarifa de envío al cliente hasta el 14-set-2026
+costo_envio_desde_15set,8.9,soles,Tarifa de envío al cliente desde el 15-set-2026
+margen_productos_pct,0.22,proporción,Margen bruto promedio sobre monto_productos
+costo_reparto_por_pedido,6.5,soles,Lo que PulsoFarma le paga al motorizado por pedido entregado
+costo_turno_motorizado_noche,70,soles,"Un motorizado adicional, turno de 20:00 a 24:00"
+pedidos_por_turno_noche,8,pedidos,Pedidos que puede entregar un motorizado en un turno nocturno
+costo_quimico_adicional_noche,2600,soles/mes,"Un químico farmacéutico adicional en el turno noche, por local"
+costo_aviso_retraso,0,soles,"Notificación automática en la app (ya existe la funcionalidad, falta activarla)"
+zona_horaria,UTC-5,,Lima. Las fechas de pedido_estados y encuestas_nps están en UTC
+nps_definicion,% promotores (9-10) - % detractores (0-6),,Pasivos (7-8) no suman ni restan
