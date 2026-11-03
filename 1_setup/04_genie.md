@@ -1,6 +1,6 @@
 # Paso 4. Crear el Genie Agent
 
-Se hace una sola vez, antes de clase, después de cargar las tablas (`01_crear_tablas.sql`). Genie lee el diccionario cada vez que responde, así que lo que completes en clase lo verá igual.
+Se hace una sola vez, antes de clase, después de validar el diccionario (`03_validar_diccionario.sql`).
 
 1. En el menú izquierdo, sección SQL, entra a **Genie Agents** → botón azul **+ New**.
 2. Selecciona las 4 tablas de `workspace.taller_pulsofarma` (`pedidos`, `pedido_estados`, `encuestas_nps`, `supuestos_negocio`) y créalo.

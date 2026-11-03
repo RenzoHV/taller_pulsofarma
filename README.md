@@ -15,8 +15,8 @@ Ustedes son el equipo de datos. Tienen 2 minutos para convencer al comité.
 ## Cómo trabajamos (1 hora)
 | Min | Paso | Carpeta | Resultado |
 |---|---|---|---|
-| Antes de clase | Setup | `1_setup/` | Datos cargados y Genie o Claude conectados |
-| 0 – 15 | Interpretar | `1_setup/` y `2_interpretar/` | Diccionario completo (0 pendientes), hallazgo en una frase y consultas que lo prueban |
+| Antes de clase | Setup | `1_setup/` | Datos cargados, diccionario completo (0 pendientes) y Genie o Claude conectados |
+| 0 – 15 | Interpretar | `2_interpretar/` | Hallazgo en una frase y consultas que lo prueban |
 | 15 – 35 | Graficar | `3_graficar/` | Dashboard de una página hecho con IA |
 | 35 – 45 | Speech | `4_speech/` | Pitch de 2 minutos |
 | 45 – 60 | Pitches | | 2 minutos por equipo ante el comité |
@@ -39,8 +39,8 @@ En `entregas/equipo_<nombre>/` (ver `entregas/README.md`):
 
 ---
 
-## 1. Setup (antes de clase, unos 15 min)
-Llega a clase con los pasos 1, 2, 3 y 6 listos. El paso 4 (diccionario) y el 5 (validar) se hacen en clase.
+## 1. Setup (antes de clase, unos 20 min)
+Llega a clase con todos los pasos listos y el validador en 0 pendientes.
 
 0. **Cuenta**: si aún no tienes, crea tu cuenta gratis en [Databricks Free Edition](https://www.databricks.com/learn/free-edition).
 1. **Esquema y volumen**: en **SQL Editor**, con un SQL warehouse seleccionado, corre solo la parte 1 de `1_setup/01_crear_tablas.sql`:
@@ -57,7 +57,7 @@ Llega a clase con los pasos 1, 2, 3 y 6 listos. El paso 4 (diccionario) y el 5 (
 Si el paso 3 falla, revisa que los CSV estén en `/Volumes/workspace/taller_pulsofarma/raw/`.
 
 ## 2. Interpretar (15 min)
-Completa el diccionario (pasos 4 y 5 del setup). Luego, primero qué queremos comunicar, después el dashboard: `2_interpretar/problema.md` y `2_interpretar/consultas.sql`.
+Primero qué queremos comunicar, después el dashboard: `2_interpretar/problema.md` y `2_interpretar/consultas.sql`.
 
 ## 3. Graficar (20 min)
 1. Pregunta directa, sin instrucciones: `3_graficar/pregunta_directa.md`.
